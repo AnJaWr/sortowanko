@@ -215,7 +215,7 @@ html {
       }
       
       .label input:checked ~ .mark {
-        background-color: blue;
+        background-color: rgb(85, 85, 85);
       }
       
       /* Create the mark/indicator (hidden when not checked) */
