@@ -391,7 +391,7 @@ var secondParagraph = courseDiv.querySelector('div:nth-child(2)');
         (selectedClasses.groupA === 'all' || divClasses.includes(selectedClasses.groupA)) &&
         (selectedClasses.groupB === 'all' || divClasses.includes(selectedClasses.groupB)) &&
         (selectedClasses.groupC === 'all' || divClasses.includes(selectedClasses.groupC));
-      div.style.display = shouldDisplay ? 'block' : 'none';
+      div.style.display = shouldDisplay ? 'flex' : 'none';
     });
   }
 
