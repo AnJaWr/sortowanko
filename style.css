@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@600&display=swap');
 
     #main_wrapper{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
  font-family: 'Space Grotesk', sans-serif;
  font-size:0.8rem;
  box-sizing: border-box;
