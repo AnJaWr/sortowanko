@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@600&display=swap');
+
+    #main_wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+ font-family: 'Space Grotesk', sans-serif;
+ font-size:0.8rem;
+ box-sizing: border-box;
+}
+.kurs{
+    width:20%;
+    color: black;
+    margin:20px;
+    padding:20px;
+    border-radius: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.kurs_info{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.kurs_info:nth-child(1) {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+
+  }
+  .kurs_info:nth-child(2) {
+margin-top:10px;
+
+  }
+
+  .kurs_info:nth-child(2),
+  .kurs_info:nth-child(5),
+  .kurs_info:nth-child(9),
+  .kurs_info:nth-child(13){
+margin-bottom:10px;
+
+  }
+  .kurs_info:nth-child(2),
+  .kurs_info:nth-child(4),
+  .kurs_info:nth-child(5),
+  .kurs_info:nth-child(8),
+  .kurs_info:nth-child(9),
+  .kurs_info:nth-child(12),
+  .kurs_info:nth-child(13)
+   {
+    font-weight: 600;
+    font-size:1.3rem
+  }
+  .kurs_info:nth-child(6),
+  .kurs_info:nth-child(7),
+  .kurs_info:nth-child(8),
+  .kurs_info:nth-child(9),
+  .kurs_info:nth-child(10),
+  .kurs_info:nth-child(11),
+  .kurs_info:nth-child(12),
+  .kurs_info:nth-child(13)
+  {
+    width: 35%;
+    margin-right:30px
+  }
+
+
+
+.one{
+background-color:#fce7db;
+}
+.one_button{
+background-color:#ee9558;
+border-style: solid;    
+}
+.one_button:hover{
+    color: #ee9558;
+    border-style: solid;
+    border-color: #ee9558;
+    background-color: #fce7db;
+}
+
+.two{ background-color: #caf4e8;
+}
+.two_button{
+background-color: #81e5cd;
+border-style: solid;
+}
+
+
+.two_button:hover{
+    color: #6bb9a7;
+    border-style: solid;
+    border-color: #81e5cd;
+    background-color: #caf4e8;
+}
+.Intensywny{
+background-color: #eae4f5;
+}
+.intensywny_button{
+background-color: #734bbc;
+}
+.intensywny_button:hover{
+    color: #734bbc;
+    border-style: solid;
+    border-color: #734bbc;
+    background-color: #eae4f5;
+}
+.Superintensywny{
+    background-color: #fbd8e2;
+}
+.superintensywny_button{
+background-color:#e54e80;
+}
+.superintensywny_button:hover{
+    color: #ee9558;
+    border-style: solid;
+    border-color: #ee9558;
+    background-color: fbd8e2;
+}
+.sub_btn{
+    padding:20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: transparent;
+    font-size:1.1rem;
+    min-width: 145px;
+    padding:10px;
+    text-align: center;
+}
+
+.lvl_svg{
+    margin-right:10px
+}
+
+
+html {
+    margin-top: 46px !important;
+}
+@media screen and (max-width: 768px){
+    #main_wrapper{
+        width: 100%;
+        justify-items: center;
+    }
+    .kurs{
+        width:80%;
+}}
+@media  (min-width:769px) and (max-width:1280px){
+    #main_wrapper{
+        width: 100%;
+    }
+    .kurs{
+        width:40%;
+        margin:6px;
+}
+}
+@media(min-width:1281px) and (max-width:1900px){
+    #main_wrapper{
+        width: 100%;
+        justify-content: center;
+    }
+    .kurs{
+        width:23%;
+        margin:6px;
+}}
+
+@media(min-width:1901px){
+    #main_wrapper{
+        width: 80%;
+    }
+    .kurs{
+        width:20%;
+}
+}
+.filterGroup{
+    margin-bottom:15px;
+    margin-left:20px;
+}
+
+    .label {
+        display: inline;
+        flex-direction: row;
+        position: relative;
+        padding-left: 10px;
+        margin-right: 35px;
+        cursor: pointer; 
+        font-family: 'Space Grotesk', sans-serif;
+    font-size:0.8rem;
+        font-size: 25px;
+      }
+      
+      /* Hide the default checkbox */
+      .label input {
+        visibility: hidden;
+        cursor: pointer;
+      }
+      
+      /* Create a custom checkbox */
+      .mark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: lightgray;
+      }
+      
+      .label:hover input ~ .mark {
+        background-color: gray;
+      }
+      
+      .label input:checked ~ .mark {
+        background-color: blue;
+      }
+      
+      /* Create the mark/indicator (hidden when not checked) */
+      .mark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the mark when checked */
+      .label input:checked ~ .mark:after {
+        display: block;
+      }
+      
+      /* Style the mark/indicator */
+      .label .mark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }

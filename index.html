@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <!-- <input type="checkbox" class="filterCheckbox" data-class="poranny"> Wyłącznie kursy poranne
+  <input type="checkbox" class="filterCheckbox" data-class="wieczorowy"> Wyłącznie kursy wieczorowe
+  <input type="checkbox" class="filterCheckbox" data-class="Standardowy"> Wyłącznie kursy standardowe
+  <input type="checkbox" class="filterCheckbox" data-class="Intensywny"> Wyłącznie kursy intensywne
+  <input type="checkbox" class="filterCheckbox" data-class="superintensywny"> Wyłącznie superintensywne
+  <input type="checkbox" class="filterCheckbox" data-class="one"> Wyłącznie poziom 1
+  <input type="checkbox" class="filterCheckbox" data-class="two"> Wyłącznie poziom 2 -->
+  <div class="filterGroup">
+    <label class="label"><input type="radio" name="groupA" value="poranny">   <span class="mark"></span>Poranny</label>
+    <label class="label"><input type="radio" name="groupA" value="wieczorowy">   <span class="mark"></span>Wieczorny</label>
+    <label class="label"><input type="radio" name="groupA" value="all" checked>   <span class="mark"></span>Wszystkie</label>
+  </div>
+  
+  <div class="filterGroup">
+    <label class="label"><input type="radio" name="groupB" value="Standardowy">   <span class="mark"></span>Standardowy</label>
+    <label class="label"><input type="radio" name="groupB" value="Intensywny">   <span class="mark"></span>Intensywny</label>
+    <label class="label"><input type="radio" name="groupB" value="Superintensywny">   <span class="mark"></span>Superintensywny</label>
+    <label class="label"><input type="radio" name="groupB" value="all" checked>  <span class="mark"></span> Wszystkie</label>
+  </div>
+  
+  <div class="filterGroup">
+    <label class="label"><input type="radio" name="groupC" value="one">  <span class="mark"></span> Poziom 1</label>
+    <label class="label"><input type="radio" name="groupC" value="two">   <span class="mark"></span>Poziom 2</label>
+    <label class="label" ><input type="radio" name="groupC" value="all" checked>   <span class="mark"></span>Wszystkie</label>
+  </div>
+  
+    <div id="main_wrapper"></div>
+
+
+<script src="mian.js"></script>
+
+</body>
+</html>
